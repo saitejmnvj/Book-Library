@@ -13,7 +13,7 @@
 #    - --image=gcr.io/coherent-vim-283907/booklibrary:latest
 #    - --location=us-central1-c
 #    - --cluster=toolautomation
-Step4  Deployment to App engine
+# Step4  Deployment to App engine
 - name : "gcr.io/cloud-builders/gcloud"
   args :  ["app","deploy","public/app.yaml"]
   timeout : 1600s
