@@ -1,4 +1,4 @@
- steps: 
+steps: 
 #Step1 Build the image
  - name : "gcr.io/cloud-builders/docker"
    args : ["build","-t","gcr.io/coherent-vim-283907/booklibrary:latest","."]
@@ -6,10 +6,10 @@
  - name : "gcr.io/cloud-builders/docker"
    args : ["push","gcr.io/coherent-vim-283907/booklibrary:latest"]
 #Step3 Deployment to APP engine
-  - name : "gcr.io/cloud-builders/gcloud"
-    args :  ["app","deploy","public/app.yaml"]
-    timeout : 1600s
- timeout : 1600s
+ - name : "gcr.io/cloud-builders/gcloud"
+   args :  ["app","deploy","public/app.yaml"]
+   timeout : 1600s
+timeout : 1600s
 #  - name : "gcr.io/cloud-builders/gke-deploy"
 #    args :
 #    - run
