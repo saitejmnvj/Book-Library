@@ -18,6 +18,6 @@ COPY . .
 # ENV IMAGE_PORT=3000
 
 # EXPOSE ${IMAGE_PORT} 
-EXPOSE 3000
+EXPOSE 3002
 
 CMD [ "npm", "start" ]
